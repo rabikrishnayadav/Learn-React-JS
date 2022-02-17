@@ -9,3 +9,26 @@ ReactDOM.render(<h1>Hello World!!</h1>,document.getElementById('root'));
 var h1 = document.createElement('h1');
 h1.innerHTML = 'Pure Java Script';
 document.getElementById('root').appendChild(h1);
+
+// Render multiple elements with two method by using div elements or array
+// 1) With Div
+ReactDOM.render(
+<div>
+<header>used multiple element with Div element</header>
+<h1>This is first h1 element</h1>
+<h2>This is first h2 element</h2>
+<p>This is paragraph element</p>
+</div>,
+document.getElementById('root')
+);
+
+// 2) with Array
+// ReactDOM.render(
+// [
+// <header>used multiple element with array</header>,
+// <h1>This is first h1 element</h1>,
+// <h2>This is first h2 element</h2>,
+// <p>This is paragraph element</p>
+// ],
+// document.getElementById('root')
+// );
