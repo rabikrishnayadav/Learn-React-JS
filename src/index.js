@@ -93,14 +93,30 @@ document.getElementById('root')
 
 // Display Current Date and Time in JSX
 
+// const Name = 'Rabi Kr Yadav';
+// const currDate = new Date().toLocaleDateString();
+// const currTime = new Date().toLocaleTimeString();
+// ReactDOM.render(
+// <>
+// <h1> My Name is {Name} </h1>
+// <p>Current Date is: {currDate}</p>
+// <p>Current Time is: {currTime}</p>
+// </>,
+// document.getElementById('root')
+// );
+
+// JSX Attributes
+
 const Name = 'Rabi Kr Yadav';
-const currDate = new Date().toLocaleDateString();
-const currTime = new Date().toLocaleTimeString();
+const photo = 'https://picsum.photos/200/200';
+const photo1 = 'https://picsum.photos/200/250';
+const mywebLink = 'https://rabikrishnayadav.com.np';
 ReactDOM.render(
 <>
-<h1> My Name is {Name} </h1>
-<p>Current Date is: {currDate}</p>
-<p>Current Time is: {currTime}</p>
+<h1 contentEditable="true"> My Name is {Name} </h1>
+<img src='https://picsum.photos/200/300' alt="Random Images" />
+<img src={photo} alt="Random Images" />
+<a href={mywebLink} target='_blank'><img src={photo1} alt="Random Images" /></a>
 </>,
 document.getElementById('root')
 );
