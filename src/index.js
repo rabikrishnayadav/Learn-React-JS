@@ -6,9 +6,9 @@ ReactDOM.render(<h1>Hello World!!</h1>,document.getElementById('root'));
 // jsx is the html code its mean uses of html is called jsx
 
 // pure javascript
-var h1 = document.createElement('h1');
-h1.innerHTML = 'Pure Java Script';
-document.getElementById('root').appendChild(h1);
+// var h1 = document.createElement('h1');
+// h1.innerHTML = 'Pure Java Script';
+// document.getElementById('root').appendChild(h1);
 
 // Render multiple elements with two method by using div elements or array
 // 1) With Div
@@ -51,10 +51,15 @@ document.getElementById('root').appendChild(h1);
 // 2) use <> </> bracket
 ReactDOM.render(
 <>
-<header>used multiple element with Dives element</header>
-<h1>This is first h1 element</h1>
-<h2>This is first h2 element</h2>
-<p>This is paragraph element</p>
+<h1>The Netflix Pick</h1>
+<p>List of 5 Best Series.</p>
+<ol>
+  <li>Dark</li>
+  <li>Extra Curricular</li>
+  <li>My Holo Love</li>
+  <li>My first-2 Love</li>
+  <li>Mr Robot</li>
+</ol>
 </>,
 document.getElementById('root')
 );
