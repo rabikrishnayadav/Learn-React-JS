@@ -64,3 +64,15 @@ ReactDOM.render(
 document.getElementById('root')
 );
 
+// jsx expression
+// here we use javascript inside jsx
+
+const fullName = 'Rabi Kr Yadav';
+ReactDOM.render(
+<>
+<h1> My Name is {fullName} </h1>
+<p>The random number is {Math.random()} </p>
+</>,
+document.getElementById('root')
+);
+
