@@ -1,5 +1,8 @@
 import React from 'react'; // this is importing for use jsx in app
 import ReactDOM from 'react-dom'; // this is importing for use render method which will show output
+
+import './index.css'; // importing class file for style
+
 ReactDOM.render(<h1>Hello World!!</h1>,document.getElementById('root'));
 
 // jsx full name is javascript extension or javasxript XML
@@ -108,15 +111,17 @@ document.getElementById('root')
 // JSX Attributes
 
 const Name = 'Rabi Kr Yadav';
-const photo = 'https://picsum.photos/200/200';
-const photo1 = 'https://picsum.photos/200/250';
+const photo = 'https://picsum.photos/215/200';
+const photo1 = 'https://picsum.photos/220/200';
 const mywebLink = 'https://rabikrishnayadav.com.np';
 ReactDOM.render(
 <>
-<h1 contentEditable="true"> My Name is {Name} </h1>
-<img src='https://picsum.photos/200/300' alt="Random Images" />
+<h1 className="heading"> My Name is {Name} </h1>
+<div className="img_div">
+  <img src='https://picsum.photos/210/200' alt="Random Images" />
 <img src={photo} alt="Random Images" />
 <a href={mywebLink} target='_blank'><img src={photo1} alt="Random Images" /></a>
+</div>
 </>,
 document.getElementById('root')
 );
