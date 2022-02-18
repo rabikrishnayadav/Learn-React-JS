@@ -81,12 +81,26 @@ document.getElementById('root')
 // this is use for show multiple javascript in jsx
 // for use it {`expression`}
 
-const firstName = 'Rabi';
-const middleName = 'Krishna';
-const lastName = 'Yadav';
+// const firstName = 'Rabi';
+// const middleName = 'Krishna';
+// const lastName = 'Yadav';
+// ReactDOM.render(
+// <>
+// <h1> {`My Name is ${firstName} ${middleName} ${lastName}`} </h1>
+// </>,
+// document.getElementById('root')
+// );
+
+// Display Current Date and Time in JSX
+
+const Name = 'Rabi Kr Yadav';
+const currDate = new Date().toLocaleDateString();
+const currTime = new Date().toLocaleTimeString();
 ReactDOM.render(
 <>
-<h1> {`My Name is ${firstName} ${middleName} ${lastName}`} </h1>
+<h1> My Name is {Name} </h1>
+<p>Current Date is: {currDate}</p>
+<p>Current Time is: {currTime}</p>
 </>,
 document.getElementById('root')
 );
