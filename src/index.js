@@ -67,12 +67,26 @@ document.getElementById('root')
 // jsx expression
 // here we use javascript inside jsx
 
-const fullName = 'Rabi Kr Yadav';
+// const fullName = 'Rabi Kr Yadav';
+// ReactDOM.render(
+// <>
+// <h1> My Name is {fullName} </h1>
+// <p>The random number is {Math.random()} </p>
+// </>,
+// document.getElementById('root')
+// );
+
+
+// Template Literals in jsx
+// this is use for show multiple javascript in jsx
+// for use it {`expression`}
+
+const firstName = 'Rabi';
+const middleName = 'Krishna';
+const lastName = 'Yadav';
 ReactDOM.render(
 <>
-<h1> My Name is {fullName} </h1>
-<p>The random number is {Math.random()} </p>
+<h1> {`My Name is ${firstName} ${middleName} ${lastName}`} </h1>
 </>,
 document.getElementById('root')
 );
-
