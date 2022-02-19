@@ -114,6 +114,11 @@ const Name = 'Rabi Kr Yadav';
 const photo = 'https://picsum.photos/215/200';
 const photo1 = 'https://picsum.photos/220/200';
 const mywebLink = 'https://rabikrishnayadav.com.np';
+const extcss = {
+  textAlign: 'center',
+  fontWeight: 'bold',
+  fontFamily: '"Gideon Roman", cursive'
+}
 ReactDOM.render(
 <>
 <h1 className="heading"> My Name is {Name} </h1>
@@ -122,6 +127,11 @@ ReactDOM.render(
 <img src={photo} alt="Random Images" />
 <a href={mywebLink} target='_blank'><img src={photo1} alt="Random Images" /></a>
 </div>
+<div style={extcss}>This is Internal Css</div>
+<div style={{
+  color: '#fa9191',
+  textAlign: 'center'
+}}>This is Inline Css</div>
 </>,
 document.getElementById('root')
 );
