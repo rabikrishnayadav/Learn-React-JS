@@ -1,7 +1,8 @@
 import React from 'react';
+import { fname, middleName, lname } from './Details';
 
-// Heading component
-
+// Heading component is defining
+function Heading(){
 const greeting = 'Hello Sir,';
 let msg = '';
 const cssStyle = { };
@@ -23,14 +24,11 @@ const headstyle = {
   flex: 'center',
   padding: '6px 10px'
 }
-
-// Heading component is defining
-function Heading(){
     return(
         <>
             <div style={headstyle}>
             <h1>{greeting} <span style={cssStyle}>{msg}</span></h1>
-            <h3>From Rabi Kr Yadav</h3>
+            <h4>From {fname +' ' + middleName() + ' ' + lname}</h4>
             </div> 
         </>
     );

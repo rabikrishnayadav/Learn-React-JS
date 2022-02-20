@@ -128,13 +128,15 @@ import Heading from './Heading'; // importing heading component
 // document.getElementById('root')
 // );
 
-// Component Starts
+// import export
+import guest from './Details';
 
   function App(){  
     return(
         <>
         {/* component is calling with custom element in jsx */}
             <Heading />
+            <h3>You are {guest} </h3>
         </>
     );
   }
