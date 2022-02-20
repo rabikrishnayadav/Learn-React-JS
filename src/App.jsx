@@ -153,6 +153,15 @@ const favSeries = "netflix";
                let updatedTime = new Date().toLocaleTimeString();
                setcurtime(updatedTime);
           }
+
+          let time = new Date().toLocaleTimeString();
+          const [curDTime, setCurDTime] = useState(time);
+
+          const DigitalClock = () => {
+               let DigitalTime = new Date().toLocaleTimeString();
+               setCurDTime(DigitalTime);
+          }
+          setInterval(DigitalClock,1000);
     return(
         <>
             <Heading />
@@ -174,6 +183,7 @@ const favSeries = "netflix";
                 <button onClick={curtime}>Click Me</button><br /><br />
                 <h1>{currentTime}</h1>
                 <button onClick={UpdateTime}>get time</button>
+                <h1>Digital Time: {curDTime} </h1>
            </div>
         </>
     );
