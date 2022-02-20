@@ -132,6 +132,7 @@ import Heading from './Heading'; // importing heading component
 import guest from './Details';
 import Calc from './Calc';
 import Card from './Cards';
+import sdata from './sdata';
 
   function App(){  
     return(
@@ -141,25 +142,41 @@ import Card from './Cards';
             <h3 style={{textAlign:'center'}}>You are {guest} </h3>
             <Calc />
            <hr />
+           <h1 className='card_heading'>List of Top 5 Netflix Series</h1>
            {/* props stand for Properties its like Attributes in html
            here in Card element we make custom props imgsrc, title, sname and slink
            here we are giving(defining) the props value
            all these are same as html attributes
             */}
-           <Card imgsrc="https://wallpapercave.com/wp/wp4056410.jpg"
-            sname="Dark"
-            title="A Netflix Original Series"
-            slink="https://rabikrishnayadav.com.np"
+           <Card
+            imgsrc={sdata[0].imgsrc}
+            sname={sdata[0].sname}
+            title={sdata[0].title}
+            slink={sdata[0].slink}
            />
-           <Card imgsrc="https://wallpapercave.com/wp/wp4056410.jpg"
-            sname="Stranger Things"
-            title="A Netflix Original Series"
-            slink="https://rabikrishnayadav.com.np"
+           <Card
+            imgsrc={sdata[1].imgsrc}
+            sname={sdata[1].sname}
+            title={sdata[1].title}
+            slink={sdata[1].slink}
            />
-           <Card imgsrc="https://wallpapercave.com/wp/wp4056410.jpg"
-            sname="Extra Curricular"
-            title="A Netflix Original Series"
-            slink="https://rabikrishnayadav.com.np"
+           <Card
+            imgsrc={sdata[2].imgsrc}
+            sname={sdata[2].sname}
+            title={sdata[2].title}
+            slink={sdata[2].slink}
+           />
+           <Card
+            imgsrc={sdata[3].imgsrc}
+            sname={sdata[3].sname}
+            title={sdata[3].title}
+            slink={sdata[3].slink}
+           />
+           <Card
+            imgsrc={sdata[4].imgsrc}
+            sname={sdata[4].sname}
+            title={sdata[4].title}
+            slink={sdata[4].slink}
            />
         </>
     );
