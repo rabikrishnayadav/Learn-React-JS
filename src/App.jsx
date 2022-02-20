@@ -143,7 +143,7 @@ import sdata from './sdata';
             <Calc />
            <hr />
            <h1 className='card_heading'>List of Top 5 Netflix Series</h1>
-           {sdata.map(function netflixCard(val){
+           {sdata.map((val) => {
                return(
                     <Card
                         imgsrc={val.imgsrc}
