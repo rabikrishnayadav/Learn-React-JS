@@ -24,11 +24,17 @@ const sdata = [
         slink: 'https://rabikrishnayadav.com.np'
     },
     {
-        sname: 'My First-2 Love',
+        sname: 'My First Love',
         imgsrc: 'https://wallpapercave.com/wp/wp4056410.jpg',
         title: 'A Netflix Original Series',
         slink: 'https://rabikrishnayadav.com.np'
     },
+    {
+        sname: 'My First-2 Love',
+        imgsrc: 'https://wallpapercave.com/wp/wp4056410.jpg',
+        title: 'A Netflix Original Series',
+        slink: 'https://rabikrishnayadav.com.np'
+    }
 ];
 
 export default sdata;
