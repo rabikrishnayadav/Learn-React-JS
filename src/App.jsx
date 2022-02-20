@@ -139,6 +139,19 @@ import Clock from './Clock';
 const favSeries = "netflix";
 
      function App(){  
+          const mybgcolor = '#8e44ad';
+          const [curbg, setcurbg] = useState(mybgcolor);
+          const btnName = 'Click Me';
+          const [curname, setcurname] = useState(btnName);
+          const BgChange = () => {
+               let newbg = '#34495e';
+               setcurbg(newbg);
+               setcurname('ouch!! 💓')
+          }
+          const bgBack = () => {
+               setcurbg(mybgcolor);
+               setcurname('Click Me');
+          }
  
     return(
         <>
@@ -157,6 +170,9 @@ const favSeries = "netflix";
                 <SlotMachine x = '🍎' y = '🍎' z = '🍎' />
            </div>
            <Clock />
+           <div className='eventDiv' style= { { backgroundColor: curbg } } >
+                <button onClick={BgChange} onDoubleClick={bgBack}> {curname} </button>
+           </div>
         </>
     );
   }

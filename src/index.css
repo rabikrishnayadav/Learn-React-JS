@@ -119,3 +119,13 @@ button {
   text-transform: uppercase;
   cursor: pointer;
 }
+
+.eventDiv {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #8e44ad;
+}
