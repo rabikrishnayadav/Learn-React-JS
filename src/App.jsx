@@ -146,6 +146,13 @@ const favSeries = "netflix";
           const IncNum = () => {
                setCount(count + 1);
           };
+
+          let currentTime = new Date().toLocaleTimeString();
+          const [curtime, setcurtime] = useState(currentTime);
+          const UpdateTime = () => {
+               let updatedTime = new Date().toLocaleTimeString();
+               setcurtime(updatedTime);
+          }
     return(
         <>
             <Heading />
@@ -164,7 +171,9 @@ const favSeries = "netflix";
            </div>
            <div className='div'>
                 <h1> {count} </h1>
-                <button onClick={IncNum}>Click Me</button>
+                <button onClick={curtime}>Click Me</button><br /><br />
+                <h1>{currentTime}</h1>
+                <button onClick={UpdateTime}>get time</button>
            </div>
         </>
     );
