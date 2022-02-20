@@ -135,7 +135,7 @@ import Card from './Cards';
 import sdata from './sdata';
 import Netflix from './Netflix';
 import Amazon from './Amazon';
-
+import SlotMachine from './SlotMachine';
 const favSeries = "netflix";
 
   function App(){  
@@ -144,10 +144,16 @@ const favSeries = "netflix";
             <Heading />
             <h3 style={{textAlign:'center'}}>You are {guest} </h3>
             <Calc />
-           
            <div style={{backgroundColor:'aquamarine',padding:'10px'}}>
                 <h1 className='card_heading'>List of Top Web Series</h1>
                 {(favSeries === 'netflix') ? <Netflix /> : <Amazon />}
+           </div>
+           <div className='slot_machine card_heading'>
+                <h1>🎰 Welcome to <span style={{ fontWeight:'bold' }}>Slot machine game</span> 🎰</h1>
+                <SlotMachine x = '💓' y = '💓' z = '💓' />
+                <SlotMachine x = '🥝' y = '💓' z = '😄' />
+                <SlotMachine x = '💓' y = '😄' z = '🍎' />
+                <SlotMachine x = '🍎' y = '🍎' z = '🍎' />
            </div>
         </>
     );
