@@ -1,4 +1,4 @@
-import React from 'react'; // this is importing for use jsx in app
+import React, { useState } from 'react'; // this is importing for use jsx in app
 import ReactDOM from 'react-dom'; // this is importing for use render method which will show output
 
 import './index.css'; // importing class file for style
@@ -138,7 +138,14 @@ import Amazon from './Amazon';
 import SlotMachine from './SlotMachine';
 const favSeries = "netflix";
 
-  function App(){  
+     function App(){  
+
+          const state = useState();
+          const [count, setCount] = useState(0);
+
+          const IncNum = () => {
+               setCount(count + 1);
+          };
     return(
         <>
             <Heading />
@@ -154,6 +161,10 @@ const favSeries = "netflix";
                 <SlotMachine x = '🥝' y = '💓' z = '😄' />
                 <SlotMachine x = '💓' y = '😄' z = '🍎' />
                 <SlotMachine x = '🍎' y = '🍎' z = '🍎' />
+           </div>
+           <div className='div'>
+                <h1> {count} </h1>
+                <button onClick={IncNum}>Click Me</button>
            </div>
         </>
     );
