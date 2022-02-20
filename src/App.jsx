@@ -133,27 +133,30 @@ import guest from './Details';
 import Calc from './Calc';
 import Card from './Cards';
 import sdata from './sdata';
+import Netflix from './Netflix';
+import Amazon from './Amazon';
+
+const favSeries = "netflix";
+
+const Series = () => {
+    if(favSeries === 'netflix'){
+        return(<Netflix />);
+    }else{
+        return(<Amazon />);
+    }
+}
 
   function App(){  
     return(
         <>
-        {/* component is calling with custom element in jsx */}
             <Heading />
             <h3 style={{textAlign:'center'}}>You are {guest} </h3>
             <Calc />
-           <hr />
-           <h1 className='card_heading'>List of Top 5 Netflix Series</h1>
-           {sdata.map((val) => {
-               return(
-                    <Card
-                        key={val.id}
-                        imgsrc={val.imgsrc}
-                        sname={val.sname}
-                        title={val.title}
-                        slink={val.slink}
-                    />
-                );
-           })}
+           
+           <div style={{backgroundColor:'aquamarine',padding:'10px'}}>
+           <h1 className='card_heading'>List of Top Web Series</h1>
+               <Series />
+           </div>
         </>
     );
   }
