@@ -130,19 +130,37 @@ import Heading from './Heading'; // importing heading component
 
 // import export
 import guest from './Details';
-import {add, sub, mult, div} from './Calc';
+import Calc from './Calc';
+import Card from './Cards';
+
   function App(){  
     return(
         <>
         {/* component is calling with custom element in jsx */}
             <Heading />
-            <h3>You are {guest} </h3>
-           <ul>
-            <li>sum of two no is {add(40,4)}</li>
-            <li>sub of two no is {sub(30,3)}</li>
-            <li>Mult of two no is {mult(10,3)}</li>
-            <li>Div of two no is {div(10,3)}</li>
-        </ul>
+            <h3 style={{textAlign:'center'}}>You are {guest} </h3>
+            <Calc />
+           <hr />
+           {/* props stand for Properties its like Attributes in html
+           here in Card element we make custom props imgsrc, title, sname and slink
+           here we are giving(defining) the props value
+           all these are same as html attributes
+            */}
+           <Card imgsrc="https://wallpapercave.com/wp/wp4056410.jpg"
+            sname="Dark"
+            title="A Netflix Original Series"
+            slink="https://rabikrishnayadav.com.np"
+           />
+           <Card imgsrc="https://wallpapercave.com/wp/wp4056410.jpg"
+            sname="Stranger Things"
+            title="A Netflix Original Series"
+            slink="https://rabikrishnayadav.com.np"
+           />
+           <Card imgsrc="https://wallpapercave.com/wp/wp4056410.jpg"
+            sname="Extra Curricular"
+            title="A Netflix Original Series"
+            slink="https://rabikrishnayadav.com.np"
+           />
         </>
     );
   }
