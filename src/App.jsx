@@ -131,37 +131,15 @@ import Heading from './Heading'; // importing heading component
 // import export
 import guest from './Details';
 import Calc from './Calc';
-import Card from './Cards';
-import sdata from './sdata';
 import Netflix from './Netflix';
 import Amazon from './Amazon';
 import SlotMachine from './SlotMachine';
+import Clock from './Clock';
+
 const favSeries = "netflix";
 
      function App(){  
-
-          const state = useState();
-          const [count, setCount] = useState(0);
-
-          const IncNum = () => {
-               setCount(count + 1);
-          };
-
-          let currentTime = new Date().toLocaleTimeString();
-          const [curtime, setcurtime] = useState(currentTime);
-          const UpdateTime = () => {
-               let updatedTime = new Date().toLocaleTimeString();
-               setcurtime(updatedTime);
-          }
-
-          let time = new Date().toLocaleTimeString();
-          const [curDTime, setCurDTime] = useState(time);
-
-          const DigitalClock = () => {
-               let DigitalTime = new Date().toLocaleTimeString();
-               setCurDTime(DigitalTime);
-          }
-          setInterval(DigitalClock,1000);
+ 
     return(
         <>
             <Heading />
@@ -178,13 +156,7 @@ const favSeries = "netflix";
                 <SlotMachine x = '💓' y = '😄' z = '🍎' />
                 <SlotMachine x = '🍎' y = '🍎' z = '🍎' />
            </div>
-           <div className='div'>
-                <h1> {count} </h1>
-                <button onClick={curtime}>Click Me</button><br /><br />
-                <h1>{currentTime}</h1>
-                <button onClick={UpdateTime}>get time</button>
-                <h1>Digital Time: {curDTime} </h1>
-           </div>
+           <Clock />
         </>
     );
   }
