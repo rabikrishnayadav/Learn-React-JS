@@ -138,14 +138,6 @@ import Amazon from './Amazon';
 
 const favSeries = "netflix";
 
-const Series = () => {
-    if(favSeries === 'netflix'){
-        return(<Netflix />);
-    }else{
-        return(<Amazon />);
-    }
-}
-
   function App(){  
     return(
         <>
@@ -154,8 +146,8 @@ const Series = () => {
             <Calc />
            
            <div style={{backgroundColor:'aquamarine',padding:'10px'}}>
-           <h1 className='card_heading'>List of Top Web Series</h1>
-               <Series />
+                <h1 className='card_heading'>List of Top Web Series</h1>
+                {(favSeries === 'netflix') ? <Netflix /> : <Amazon />}
            </div>
         </>
     );
