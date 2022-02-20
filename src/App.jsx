@@ -146,6 +146,7 @@ import sdata from './sdata';
            {sdata.map((val) => {
                return(
                     <Card
+                        key={val.id}
                         imgsrc={val.imgsrc}
                         sname={val.sname}
                         title={val.title}
