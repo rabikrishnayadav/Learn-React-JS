@@ -134,17 +134,6 @@ import Calc from './Calc';
 import Card from './Cards';
 import sdata from './sdata';
 
-function netflixCard(val){
-    return(
-        <Card
-            imgsrc={val.imgsrc}
-            sname={val.sname}
-            title={val.title}
-            slink={val.slink}
-        />
-    );
-}
-
   function App(){  
     return(
         <>
@@ -154,7 +143,16 @@ function netflixCard(val){
             <Calc />
            <hr />
            <h1 className='card_heading'>List of Top 5 Netflix Series</h1>
-           {sdata.map(netflixCard)}
+           {sdata.map(function netflixCard(val){
+               return(
+                    <Card
+                        imgsrc={val.imgsrc}
+                        sname={val.sname}
+                        title={val.title}
+                        slink={val.slink}
+                    />
+                );
+           })}
         </>
     );
   }
