@@ -229,9 +229,11 @@ input {
 }
 
 .todo_style .fa-times {
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   display: flex;
+  font-size: small;
+  font-weight: bold;
   justify-content: center;
   align-items: center;
   background-color: #8e44ad;
