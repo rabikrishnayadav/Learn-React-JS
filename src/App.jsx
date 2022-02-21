@@ -136,6 +136,7 @@ import Amazon from './Amazon';
 import SlotMachine from './SlotMachine';
 import Clock from './Clock';
 import Forms from './Forms';
+import Todo from './Todo';
 
 const favSeries = "netflix";
 
@@ -174,6 +175,7 @@ const favSeries = "netflix";
                 <button onClick={BgChange} onDoubleClick={bgBack}> {curname} </button>
            </div>
            <Forms />
+           <Todo />
         </>
     );
   }
