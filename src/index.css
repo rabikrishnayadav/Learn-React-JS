@@ -274,3 +274,11 @@ input {
   margin-top: 30px;
   box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
 }
+
+.btn_div .btn_green:hover {
+  background-color: #2ed573;
+}
+
+.btn_div .btn_red:hover {
+  background-color: #ff4757;
+}
