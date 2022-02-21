@@ -11,37 +11,13 @@ const Forms = () => {
 
     const inputEvent = (event) => {
         const {name, value} = event.target;
-        
+
         setNewInputValue((prevValue) =>{
-            if(name === 'fullName'){
-                return{
-                    fullName: value,
-                    email: prevValue.email,
-                    password: prevValue.password,
-                    number: prevValue.number
-                };
-            }else if(name === 'email'){
-                return{
-                    fullName: prevValue.fullName,
-                    email: value,
-                    password: prevValue.password,
-                    number: prevValue.number
-                };
-            }else if(name === 'password'){
-                return{
-                    fullName: prevValue.fullName,
-                    email: prevValue.email,
-                    password: value,
-                    number: prevValue.number
-                };
-            }else if(name === 'number'){
-                return{
-                    fullName: prevValue.fullName,
-                    email: prevValue.email,
-                    password: prevValue.password,
-                    number: value
-                };
-            }
+            
+            return {
+                ...prevValue,
+                [name] : value,
+            };
         });
     };
     
