@@ -135,6 +135,7 @@ import Netflix from './Netflix';
 import Amazon from './Amazon';
 import SlotMachine from './SlotMachine';
 import Clock from './Clock';
+import Forms from './Forms';
 
 const favSeries = "netflix";
 
@@ -151,17 +152,6 @@ const favSeries = "netflix";
           const bgBack = () => {
                setcurbg(mybgcolor);
                setcurname('Click Me');
-          }
-
-          const [name, setName] = useState('');
-          const [fullName, setFullName] = useState();
-
-          const inputEvent = (event) => {
-               setName(event.target.value);
-          };
-          
-          const onSubmit = () => {
-               setFullName(name);
           }
     return(
         <>
@@ -183,11 +173,7 @@ const favSeries = "netflix";
            <div className='eventDiv' style= { { backgroundColor: curbg } } >
                 <button onClick={BgChange} onDoubleClick={bgBack}> {curname} </button>
            </div>
-           <div className='eventDiv'>
-               <h1>Hello {fullName} </h1>
-               <input type="text" placeholder='Enter Your Name' value={name} onChange={inputEvent}/>
-               <button onClick={onSubmit}> Click Me 👍</button>
-           </div>
+           <Forms />
         </>
     );
   }
