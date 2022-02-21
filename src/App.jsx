@@ -137,6 +137,7 @@ import SlotMachine from './SlotMachine';
 import Clock from './Clock';
 import Forms from './Forms';
 import Todo from './Todo';
+import IncDecNum from './IncDecNum';
 
 const favSeries = "netflix";
 
@@ -176,6 +177,7 @@ const favSeries = "netflix";
            </div>
            <Forms />
            <Todo />
+           <IncDecNum />
         </>
     );
   }
