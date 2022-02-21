@@ -138,6 +138,7 @@ import Clock from './Clock';
 import Forms from './Forms';
 import Todo from './Todo';
 import IncDecNum from './IncDecNum';
+import BootstrapCard from './BootstrapCard';
 
 const favSeries = "netflix";
 
@@ -178,6 +179,7 @@ const favSeries = "netflix";
            <Forms />
            <Todo />
            <IncDecNum />
+          <BootstrapCard />
         </>
     );
   }
