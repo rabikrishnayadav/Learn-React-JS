@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import './index.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import AddIcon from '@material-ui/icons/Add';                   // for v4
 import DeleteIcon from '@material-ui/icons/Delete';             // for v4
 import Button from '@material-ui/core/Button';                   // for v4
@@ -40,7 +41,7 @@ const IncDecNum = () => {
                         <Tooltip title="Delete">
                         <Button className='btn_red' onClick={decNum}><DeleteIcon /></Button>
                         </Tooltip>
-                    </div>
+                    </div><h4 className="text-danger mt-5">Thank You</h4>
                 </div>
             </div>
         </>
