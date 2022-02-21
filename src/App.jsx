@@ -152,7 +152,17 @@ const favSeries = "netflix";
                setcurbg(mybgcolor);
                setcurname('Click Me');
           }
- 
+
+          const [name, setName] = useState('');
+          const [fullName, setFullName] = useState();
+
+          const inputEvent = (event) => {
+               setName(event.target.value);
+          };
+          
+          const onSubmit = () => {
+               setFullName(name);
+          }
     return(
         <>
             <Heading />
@@ -172,6 +182,11 @@ const favSeries = "netflix";
            <Clock />
            <div className='eventDiv' style= { { backgroundColor: curbg } } >
                 <button onClick={BgChange} onDoubleClick={bgBack}> {curname} </button>
+           </div>
+           <div className='eventDiv'>
+               <h1>Hello {fullName} </h1>
+               <input type="text" placeholder='Enter Your Name' value={name} onChange={inputEvent}/>
+               <button onClick={onSubmit}> Click Me 👍</button>
            </div>
         </>
     );
