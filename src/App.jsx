@@ -139,6 +139,7 @@ import Forms from './Forms';
 import Todo from './Todo';
 import IncDecNum from './IncDecNum';
 import BootstrapCard from './BootstrapCard';
+import Accordion from './component/accordion/accordion';
 
 const favSeries = "netflix";
 
@@ -179,6 +180,7 @@ const favSeries = "netflix";
            <Forms />
            <Todo />
            <IncDecNum />
+          <Accordion />
           <BootstrapCard />
         </>
     );
