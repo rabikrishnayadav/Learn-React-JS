@@ -1,5 +1,5 @@
 import React, {createContext} from 'react';
-import ComA from './ComA';
+import ComB from './ComB';
 
 const FirstName = createContext();
 const LastName = createContext();
@@ -10,7 +10,7 @@ const ComC = () => {
             <h1>Component C</h1>
             <FirstName.Provider value={'Rabi'}>
             <LastName.Provider value={'yadav'}>
-            <ComA/>
+            <ComB/>
             </LastName.Provider>
             </FirstName.Provider>
         </>

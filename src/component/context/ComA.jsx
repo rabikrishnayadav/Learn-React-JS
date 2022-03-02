@@ -1,6 +1,6 @@
 import React from 'react';
 import { FirstName, LastName } from './ComC';
-import { MiddleName } from './ComB';
+import ComB, { MiddleName } from './ComB';
 
 const ComA = () => {
     return(
@@ -13,8 +13,11 @@ const ComA = () => {
                             return (
                                 <LastName.Consumer>
                                     {(lname) => {
-                                        return <h1>My Name is {fname} {mname} {lname}</h1>;
+                                        return (<><h1>My Name is {fname} {mname} {lname}</h1>
+                                        <ComB />
+                                        </>);
                                     }}
+
                                 </LastName.Consumer>
                             );
                         }}
