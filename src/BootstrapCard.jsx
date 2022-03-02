@@ -4,7 +4,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 const BootstrapCard = () => {
     return(
         <>
-            <div class="container" style={{height:'100vh'}}>
+            <div className="container" style={{height:'100vh'}}>
                 <div className="row">
                 <h1 className="text-center text-primary text-capitalize">This is Bootstrap Card</h1>
                     <div className="col">

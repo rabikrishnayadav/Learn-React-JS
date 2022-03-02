@@ -1,5 +1,4 @@
 import React, { useState } from 'react'; // this is importing for use jsx in app
-import ReactDOM from 'react-dom'; // this is importing for use render method which will show output
 
 import './index.css'; // importing class file for style
 
@@ -140,6 +139,8 @@ import Todo from './Todo';
 import IncDecNum from './IncDecNum';
 import BootstrapCard from './BootstrapCard';
 import Accordion from './component/accordion/accordion';
+import CompA from './component/context/ComA'
+import CompC, { FirstName } from './component/context/ComC';
 
 const favSeries = "netflix";
 
@@ -181,7 +182,8 @@ const favSeries = "netflix";
            <Todo />
            <IncDecNum />
           <Accordion />
-          <BootstrapCard />
+          <CompA />
+          
         </>
     );
   }
