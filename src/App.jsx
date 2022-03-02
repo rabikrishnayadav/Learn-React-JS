@@ -137,11 +137,8 @@ import Clock from './Clock';
 import Forms from './Forms';
 import Todo from './Todo';
 import IncDecNum from './IncDecNum';
-import BootstrapCard from './BootstrapCard';
 import Accordion from './component/accordion/accordion';
-import CompA from './component/context/ComA'
-import CompC, { FirstName } from './component/context/ComC';
-
+import Effect from './Effect';
 const favSeries = "netflix";
 
      function App(){  
@@ -182,8 +179,7 @@ const favSeries = "netflix";
            <Todo />
            <IncDecNum />
           <Accordion />
-          <CompA />
-          
+          <Effect />
         </>
     );
   }
