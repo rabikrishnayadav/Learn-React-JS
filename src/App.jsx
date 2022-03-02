@@ -164,8 +164,9 @@ const favSeries = "netflix";
         <>
           <Navbar />
           <Switch>
-            <Route exact path='/contact' component={Contact} />
-            <Route exact path='/about' component={About} />
+            <Route exact path='/' component={App} />
+            <Route exact path='/contact' component={ () => <Contact name='Contact' />} />
+            <Route exact path='/about' render={ () => <About name='About' /> } />
             <Route component={Error} />
           </Switch>
             <Heading />

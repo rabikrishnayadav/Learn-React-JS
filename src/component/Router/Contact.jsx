@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Contact() {
+function Contact(props) {
   return (
-    <div>This is Contact page</div>
+    <div>This is {props.name} page</div>
   )
 }
 
