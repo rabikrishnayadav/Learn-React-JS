@@ -7,7 +7,8 @@ function Effect() {
     const [num, setNum] = useState(0);
 
     useEffect( () => {
-        alert('You Clicked ' + ' ' + num + ' ' + ' times' );
+        // alert('You Clicked ' + ' ' + num + ' ' + ' times' );
+        document.title=`you clicked ${num} times`;
     }, [num]);
   return (
     <>
