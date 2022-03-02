@@ -139,6 +139,8 @@ import Todo from './Todo';
 import IncDecNum from './IncDecNum';
 import Accordion from './component/accordion/accordion';
 import Effect from './Effect';
+import Navbar from './component/Router/Navbar';
+
 const favSeries = "netflix";
 
      function App(){  
@@ -157,6 +159,7 @@ const favSeries = "netflix";
           }
     return(
         <>
+          <Navbar />
             <Heading />
             <h3 style={{textAlign:'center'}}>You are {guest} </h3>
             <Calc />
