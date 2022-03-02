@@ -1,19 +1,12 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
-import App from '../../App';
-import About from './About';
-import Contact from './Contact';
-import Error from './Error';
+import { NavLink } from 'react-router-dom';
+import '../../index.css';
 
 function Navbar() {
   return (
     <>
-        <Switch>
-            <Route exact path='/' component={App} />
-            <Route exact path='/contact' component={Contact} />
-            <Route exact path='/about' component={About} />
-            <Route component={Error} />
-        </Switch>
+        <NavLink exact activeClassName='active_class' to='/about'>About Us</NavLink>
+        <NavLink exact activeClassName='active_class' to='/contact'>Contact Us</NavLink>
     </>
   )
 }

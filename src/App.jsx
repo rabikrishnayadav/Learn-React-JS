@@ -139,7 +139,10 @@ import Todo from './Todo';
 import IncDecNum from './IncDecNum';
 import Accordion from './component/accordion/accordion';
 import Effect from './Effect';
+import { Route, Switch } from 'react-router-dom';
 import Navbar from './component/Router/Navbar';
+import Contact from './component/Router/Contact';
+import About from './component/Router/About';
 
 const favSeries = "netflix";
 
@@ -160,6 +163,11 @@ const favSeries = "netflix";
     return(
         <>
           <Navbar />
+          <Switch>
+            <Route exact path='/contact' component={Contact} />
+            <Route exact path='/about' component={About} />
+            <Route component={Error} />
+          </Switch>
             <Heading />
             <h3 style={{textAlign:'center'}}>You are {guest} </h3>
             <Calc />

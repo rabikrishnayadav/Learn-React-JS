@@ -282,3 +282,8 @@ input {
 .btn_div .btn_red:hover {
   background-color: #ff4757;
 }
+
+a.active_class {
+  color: rgb(119, 0, 255);
+  border-bottom: 1px solid red;
+}
