@@ -1,8 +1,13 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 function Error() {
   return (
-    <div>Error 404: Page Not Found</div>
+    <>
+    <h1>Error 404: Error Page</h1>
+    <p>Sorry, This page does't exist</p>
+    <NavLink to={'/'}>Go Back</NavLink>
+    </>
   );
 };
 
