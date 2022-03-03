@@ -139,7 +139,7 @@ import Todo from './Todo';
 import IncDecNum from './IncDecNum';
 import Accordion from './component/accordion/accordion';
 import Effect from './Effect';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import Navbar from './component/Router/Navbar';
 import Contact from './component/Router/Contact';
 import About from './component/Router/About';
@@ -172,6 +172,7 @@ const favSeries = "netflix";
             <Route exact path='/search' render={ () => <Search name='Search' /> } />
             <Route exact path='/user/:name' render={ () => <User name='User' /> } />
             <Route component={Error} />
+            <Redirect to='/' />
           </Switch>
             <Heading />
             <h3 style={{textAlign:'center'}}>You are {guest} </h3>
