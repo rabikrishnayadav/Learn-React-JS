@@ -168,7 +168,7 @@ const favSeries = "netflix";
             <Route exact path='/' component={App} />
             <Route exact path='/contact' component={ () => <Contact name='Contact' />} />
             <Route exact path='/about' render={ () => <About name='About' /> } />
-            <Route exact path='/user/:name' render={ () => <About name='User' /> } />
+            <Route exact path='/user/:name' render={ () => <User name='User' /> } />
             <Route component={Error} />
           </Switch>
             <Heading />
