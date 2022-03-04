@@ -5,6 +5,7 @@ import IconButton from '@mui/material/IconButton';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import {NavLink} from 'react-router-dom';
 
 function Navmenu() {
 
@@ -21,16 +22,16 @@ function Navmenu() {
             <div className={showMeidaIcons ? "menu-link mobile-menu-link" : "menu-link" }>
                 <ul>
                     <li>
-                        <a href="#">Home</a>
+                        <NavLink exact to="/">Home</NavLink>
                     </li>
                     <li>
-                        <a href="#">Services</a>
+                        <NavLink to="/service">Services</NavLink>
                     </li>
                     <li>
-                        <a href="#">About</a>
+                        <NavLink to="/about">About</NavLink>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <NavLink to="/contact">Contact</NavLink>
                     </li>
                 </ul>
             </div>
@@ -65,10 +66,10 @@ function Navmenu() {
                 </div>
             </div>
         </nav>
-        <section className='hero-section'>
+        {/* <section className='hero-section'>
             <p>This is the Simple</p>
             <h1>Navigation Menu</h1>
-        </section>
+        </section> */}
     </div>
   );
 };

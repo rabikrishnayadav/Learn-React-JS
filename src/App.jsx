@@ -145,7 +145,7 @@ import Contact from './component/Router/Contact';
 import About from './component/Router/About';
 import User from './component/Router/User';
 import Search from './component/Router/Search';
-import Navmenu from './component/Navbar/Navbar';
+import NavPages from './component/Navbar/Navbar';
 const favSeries = "netflix";
 
      function App(){  
@@ -164,8 +164,8 @@ const favSeries = "netflix";
           }
     return(
         <>
-          <Navbar />
-          <Navmenu />
+          {/* <Navbar /> */}
+          <NavPages />
           {/* <Switch>
             <Route exact path='/' component={App} />
             <Route exact path='/contact' component={ () => <Contact name='Contact' />} />
