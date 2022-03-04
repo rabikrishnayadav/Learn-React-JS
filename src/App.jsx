@@ -139,7 +139,7 @@ import Todo from './component/Todo/Todo';
 import IncDecNum from './IncDecNum';
 import Accordion from './component/accordion/accordion';
 import Effect from './Effect';
-import { Route, Switch, Redirect } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from './component/Router/Navbar';
 import Contact from './component/Router/Contact';
 import About from './component/Router/About';
@@ -148,7 +148,7 @@ import Search from './component/Router/Search';
 import NavPages from './component/Navbar/Navbar';
 
 import ToDOList from './component/Todo/ToDOList';
-
+import AdvanceTodo from './component/Todo/AdvanceTodo';
 
 const favSeries = "netflix";
 
@@ -168,17 +168,17 @@ const favSeries = "netflix";
           }
     return(
         <>
-          {/* <Navbar /> */}
           <NavPages />
-          {/* <Switch>
+          <Navbar />
+          <Routes>
             <Route exact path='/' component={App} />
             <Route exact path='/contact' component={ () => <Contact name='Contact' />} />
             <Route exact path='/about' render={ () => <About name='About' /> } />
             <Route exact path='/search' render={ () => <Search name='Search' /> } />
             <Route exact path='/user/:name' render={ () => <User name='User' /> } />
             <Route component={Error} />
-            <Redirect to='/' />
-          </Switch> */}
+            {/* <Navigate to='/' /> */}
+          </Routes>
             <Heading />
             <h3 style={{textAlign:'center'}}>You are {guest} </h3>
             <Calc />
@@ -203,6 +203,7 @@ const favSeries = "netflix";
           <Accordion />
           <Effect />
           <ToDOList />
+          <AdvanceTodo />
         </>
     );
   }

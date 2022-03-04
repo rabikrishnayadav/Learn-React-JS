@@ -1,6 +1,6 @@
 import React from 'react';
 import Navmenu from './Navbar';
-import {Switch, Route} from 'react-router-dom'
+import {Routes, Route} from 'react-router-dom'
 import './Navbar.css';
 
 const Home = () => {
@@ -54,7 +54,7 @@ const Services = () => {
 const NavPages = () => {
   return (
     <>
-    <Switch>
+    <Routes>
         <Route path='/'>
             <Home />
         </Route>
@@ -67,7 +67,7 @@ const NavPages = () => {
         <Route path='/contact'>
             <Contact />
         </Route>
-    </Switch>
+    </Routes>
     </>
   );
 };

@@ -4,7 +4,7 @@ import MyAccordion from './MyAccordion';
 
 const Accordion = () => {
 
-    const [data, setDAta] = useState(questions);
+    const [data, setData] = useState(questions);
 
     return(
         <>
