@@ -135,7 +135,7 @@ import Amazon from './Amazon';
 import SlotMachine from './SlotMachine';
 import Clock from './Clock';
 import Forms from './Forms';
-import Todo from './Todo';
+import Todo from './component/Todo/Todo';
 import IncDecNum from './IncDecNum';
 import Accordion from './component/accordion/accordion';
 import Effect from './Effect';
