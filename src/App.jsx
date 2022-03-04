@@ -146,6 +146,10 @@ import About from './component/Router/About';
 import User from './component/Router/User';
 import Search from './component/Router/Search';
 import NavPages from './component/Navbar/Navbar';
+
+import ToDOList from './component/Todo/ToDOList';
+
+
 const favSeries = "netflix";
 
      function App(){  
@@ -198,6 +202,7 @@ const favSeries = "netflix";
            <IncDecNum />
           <Accordion />
           <Effect />
+          <ToDOList />
         </>
     );
   }
