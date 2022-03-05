@@ -1,0 +1,53 @@
+.main-div {
+  width: 100%;
+  min-height: 100vh;
+  /* display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; */
+  background: lightcyan;
+}
+
+.center_div {
+  width: 60%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background: #f9d89c; */
+  background-color: #f4f4f4;
+  border-radius: 15px;
+  box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.5);
+}
+
+.img-gluid {
+  height: 220px;
+}
+
+.main-title h1 {
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.price-book-divide h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #4db6ac;
+}
+
+.price-book-divide {
+  margin-bottom: 10px;
+}
+
+.row {
+  margin-right: 0;
+  margin-left: 0px;
+}
+
+.btn-primary {
+  background-color: #4db6ac;
+  outline: none;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}

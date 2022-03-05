@@ -149,6 +149,7 @@ import NavPages from './component/Navbar/Navbar';
 
 import ToDOList from './component/Todo/ToDOList';
 import AdvanceTodo from './component/Todo/AdvanceTodo';
+import Tabs from './component/TabMenu/Tabs';
 
 const favSeries = "netflix";
 
@@ -204,6 +205,7 @@ const favSeries = "netflix";
           <Effect />
           <ToDOList />
           <AdvanceTodo />
+          <Tabs />
         </>
     );
   }
