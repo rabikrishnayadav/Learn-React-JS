@@ -152,6 +152,7 @@ import AdvanceTodo from './component/Todo/AdvanceTodo';
 import Tabs from './component/TabMenu/Tabs';
 import Covid from './component/Api/Covid/Covid';
 import Statewise from './component/Api/Covid/Statewise';
+import Pokemon from './component/Api/Covid/Pokemon';
 
 const favSeries = "netflix";
 
@@ -210,6 +211,7 @@ const favSeries = "netflix";
           <Tabs />
           <Covid />
           <Statewise />
+          <Pokemon />
         </>
     );
   }
